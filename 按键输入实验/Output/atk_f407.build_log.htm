@@ -1,0 +1,65 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: μVision V5.36.0.0
+Copyright (C) 2021 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: sdf zhaobw, ss, LIC=PE7DL-0R6Q8-NNCAF-6QNL4-5MI35-IH9TL
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.36.0.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 7 (build 960)
+Assembler:       Armasm.exe V5.06 update 7 (build 960)
+Linker/Locator:  ArmLink.exe V5.06 update 7 (build 960)
+Library Manager: ArmAr.exe V5.06 update 7 (build 960)
+Hex Converter:   FromElf.exe V5.06 update 7 (build 960)
+CPU DLL:         SARMCM3.DLL V5.36.0.0
+Dialog DLL:      DCM.DLL V1.17.3.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.0.9.0
+Dialog DLL:      TCM.DLL V1.53.0.0
+ 
+<h2>Project:</h2>
+C:\Users\zhaobw\Desktop\KeilProject\按键输入实验\Projects\MDK-ARM\atk_f407.uvprojx
+Project File Date:  09/20/2023
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 7 (build 960)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
+Build target 'KEY'
+compiling main.c...
+..\..\User\main.c(9): error:  #130: expected a "{"
+  int main(void)
+..\..\User\main.c: 0 warnings, 1 error
+compiling key.c...
+..\..\Drivers\./SYSTEM/delay/delay.h(7): error:  #130: expected a "{"
+  void delay_init(uint16_t sysclk);           /* 初始化延迟函数 */
+..\..\Drivers\BSP\KEY\key.c(12): warning:  #12-D: parsing restarts here after previous syntax error
+  {
+..\..\Drivers\BSP\KEY\key.c(43): warning:  #940-D: missing return statement at end of non-void function "key_scan" 
+  }
+..\..\Drivers\BSP\KEY\key.c(58): error:  #247: function "key_scan"  has already been defined
+  uint8_t key_scan(uint8_t mode)
+..\..\Drivers\BSP\KEY\key.c(67): warning:  #223-D: function "delay_ms" declared implicitly
+          delay_ms(10);           /* 去抖动 */
+..\..\Drivers\BSP\KEY\key.c: 3 warnings, 2 errors
+compiling led.c...
+compiling beep.c...
+"..\..\Output\atk_f407.axf" - 3 Error(s), 3 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: Keil
+                https://www.keil.com/pack/Keil.STM32F4xx_DFP.2.17.1.pack
+                Keil.STM32F4xx_DFP.2.17.1
+                STMicroelectronics STM32F4 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  C:\Users\zhaobw\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include
+
+<h2>Collection of Component Files used:</h2>
+Target not created.
+Build Time Elapsed:  00:00:01
+</pre>
+</body>
+</html>
